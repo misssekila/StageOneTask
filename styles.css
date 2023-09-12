@@ -1,0 +1,72 @@
+/* Reset default margin and padding */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header containing the Slack username */
+h1[data-testid="slackUserName"] {
+    font-size: 24px;
+    color: #333;
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* Style the Slack display picture */
+img[data-testid="slackDisplayImage"] {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    border: 5px solid rgb(65, 19, 44);
+    max-width: 200px; /* Adjust the size as needed */
+}
+
+/* Style the paragraph for displaying the current day of the week */
+p[data-testid="currentDayOfTheWeek"] {
+    font-size: 18px;
+    color: rgb(3, 0, 0);
+    text-align: center;
+    margin: 20px;
+}
+
+/* Style the paragraph for displaying the current UTC time */
+p[data-testid="currentUTCTime"] {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px;
+}
+
+/* Style the paragraph for displaying the track */
+p[data-testid="myTrack"] {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Style the GitHub link */
+a[data-testid="githubURL"] {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    color: #0077b5; /* GitHub link blue color */
+    font-weight: bold;
+}
+
+/* Add a hover effect for the GitHub link */
+a[data-testid="githubURL"]:hover {
+    text-decoration: underline;
+}
+
+/* Add a box shadow to the GitHub link on hover */
+a[data-testid="githubURL"]:hover {
+    box-shadow: 0px 0px 5px 0px #666;
+}
